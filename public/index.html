@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/build/tailwind.css" />
     <title>rethread.agency</title>
   </head>
-  <body class="w-screen antialiased">
+  <body class="w-screen antialiased bg-gray-100">
     <div class="container flex m-auto header">
       <h1 class="self-center">Building & growing software products.</h1>
       <div role="img"></div>
@@ -24,7 +24,7 @@
       <span class="wwd-tab">SEO</span>
       <span class="wwd-tab">Analytics</span>
     </div>
-    <div class="relative w-full p-4 bg-green-100 lg:-mt-8 what-we-do">
+    <div class="relative w-full p-4 bg-green-200 lg:-mt-8 what-we-do">
       <div class="container m-auto lg:flex wwd-content-container">
         <div class="self-center flex-shrink wwd-content-wrapper">
           <h2>Technical Writing</h2>
@@ -46,6 +46,11 @@
     <div class="about-us">
       <div class="lg:flex about-container">
         <div class="self-center about-content">
+          <div
+            class="relative flex content-center w-16 h-16 p-4 align-middle bg-purple-900 rounded-lg"
+          >
+            <img class="m-auto" src="./icon_comment.svg" />
+          </div>
           <h1>About Barbara</h1>
           <p class="about-paragraph">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo id
@@ -54,21 +59,20 @@
             quae iusto quaerat placeat?
           </p>
         </div>
-        <div class="bg-gray-800 about-image-wrapper">
-          <img
-            class="object-cover w-full m-auto rounded-lg"
-            src="https://source.unsplash.com/random/150x150"
-          />
+        <div class="bg-teal-200 about-image-wrapper">
+          <img class="about-image" src="./barbara-portrait.jpg" />
         </div>
       </div>
       <div class="lg:flex about-container">
-        <div class="bg-gray-700 about-image-wrapper">
-          <img
-            class="object-cover w-full m-auto rounded-lg"
-            src="https://source.unsplash.com/random/150x150"
-          />
+        <div class="bg-teal-100 about-image-wrapper">
+          <img class="about-image" src="./toon-portrait.jpg" />
         </div>
         <div class="self-center about-content">
+          <div
+            class="relative flex content-center w-16 h-16 p-4 align-middle bg-purple-900 rounded-lg"
+          >
+            <img class="m-auto" src="./icon_comment.svg" />
+          </div>
           <h1>About Toon</h1>
           <p class="about-paragraph">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo id
@@ -79,26 +83,30 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center mt-10 contact">
-      <h1>Work with us</h1>
-      <span class="text-lg text-gray-700"
+    <div
+      class="flex flex-col items-center w-3/4 p-24 m-auto my-10 text-white bg-gray-900 rounded-lg contact"
+    >
+      <h1 class="text-white">Work with us</h1>
+      <span class="text-lg text-white"
         >Pitch us your plan, and we'll break it down to the minimum.
       </span>
       <button
-        class="h-16 px-10 m-auto my-12 text-xl font-bold text-yellow-400 bg-black rounded-lg hover:text-yellow-500"
+        class="h-16 px-10 m-auto my-12 text-xl font-bold text-black bg-yellow-300 rounded-lg"
       >
         Get in touch
       </button>
     </div>
-    <div class="footer">
-      ®Rethread • 2020
+    <div
+      class="flex content-center h-48 text-center align-middle bg-gray-600 footer"
+    >
+      <span class="flex-grow text-lg text-gray-200">®Rethread • 2020</span>
     </div>
     <script>
       let isOpen = false;
 
       const toggleNav = () => (isOpen = !isOpen);
       const content = [
-        { header: 'My first header', content: 'My first coontent' },
+        { header: 'My first header', content: 'My first content' },
         {
           header: 'My 2nd header',
           content:

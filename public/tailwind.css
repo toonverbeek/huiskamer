@@ -35,19 +35,30 @@ h2 {
 .about-content {
   @apply p-20;
 }
-@media (min-width: 1240px) {
-  .what-we-do {
-    min-height: 500px;
-  }
-  .about-image-wrapper {
-    @apply p-32 mt-0;
-  }
-
-  .about-content {
-    max-width: 50%;
-  }
-}
 
 .about-image-wrapper {
-  @apply relative flex-grow;
+  @apply relative;
+}
+
+.about-image {
+  @apply object-cover m-auto rounded-lg;
+  max-width: 350px;
+  max-height: 350px;
+}
+
+@media (min-width: 1240px) {
+  .what-we-do {
+    padding: 150px;
+  }
+  .about-image-wrapper {
+    @apply flex-grow p-32 mt-0;
+  }
+
+  .about-container {
+    justify-content: center;
+  }
+  .about-content {
+    max-width: 50%;
+    flex-grow: 1;
+  }
 }

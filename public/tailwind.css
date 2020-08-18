@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply text-5xl font-bold text-gray-900;
+}
+
+h2 {
+  @apply text-4xl font-bold text-gray-900;
+}
+
+.header {
+  height: 300px;
+}
+
+.what-we-do {
+  z-index: -1;
+}
+
+.active-tab {
+  @apply p-3 text-black bg-yellow-400 rounded-full;
+}
+
+.wwd-tab {
+  @apply font-semibold cursor-pointer;
+  min-width: 5rem;
+  text-align: center;
+}
+
+.about-paragraph {
+  @apply max-w-2xl;
+}
+
+.about-content {
+  @apply p-20;
+}
+@media (min-width: 1240px) {
+  .what-we-do {
+    min-height: 500px;
+  }
+  .about-image-wrapper {
+    @apply p-32 mt-0;
+  }
+
+  .about-content {
+    max-width: 50%;
+  }
+}
+
+.about-image-wrapper {
+  @apply relative flex-grow;
+}

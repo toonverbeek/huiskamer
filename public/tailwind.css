@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 p {
-  @apply leading-normal text-green-900;
+  @apply leading-normal text-gray-900;
   margin-bottom: 1rem;
 }
 
 .prose {
-  @apply text-green-900;
+  @apply text-gray-900;
 }
 
 body {

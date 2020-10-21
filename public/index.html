@@ -28,19 +28,85 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img src="./images/4.JPG" /></div>
-          <div class="swiper-slide"><img src="./images/5.jpeg" /></div>
-          <div class="swiper-slide"><img src="./images/8.JPG" /></div>
-          <div class="swiper-slide"><img src="./images/IMG_0042.jpeg" /></div>
-          <div class="swiper-slide"><img src="./images/7.jpg" /></div>
-          <div class="swiper-slide"><img src="./images/IMG_9960.JPG" /></div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-lazy"
+              data-src="https://res.cloudinary.com/toonverbeek/image/upload/q_auto:good/v1603270131/huiskamer/4_bzq9im.jpg"
+            />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-lazy"
+              data-src="https://res.cloudinary.com/toonverbeek/image/upload/q_auto:good/v1603270131/huiskamer/5_cxozst.jpg"
+            />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-lazy"
+              data-src="https://res.cloudinary.com/toonverbeek/image/upload/q_auto:good/v1603270132/huiskamer/8_hwntmn.jpg"
+            />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-lazy"
+              data-src="https://res.cloudinary.com/toonverbeek/image/upload/q_auto:good/v1603270133/huiskamer/IMG_0042_iahtyt.jpg"
+            />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-lazy"
+              data-src="https://res.cloudinary.com/toonverbeek/image/upload/q_auto:good/v1603270133/huiskamer/7_p0qyyz.jpg"
+            />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-lazy"
+              data-src="https://res.cloudinary.com/toonverbeek/image/upload/q_auto:good/v1603270133/huiskamer/IMG_9960_lrwilb.jpg"
+            />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
 
-          <div class="swiper-slide"><img src="./images/9.jpg" /></div>
-          <div class="swiper-slide"><img src="./images/IMG_4374.jpg" /></div>
-          <div class="swiper-slide"><img src="./images/IMG_2370 2.JPG" /></div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-lazy"
+              data-src="https://res.cloudinary.com/toonverbeek/image/upload/q_auto:good/v1603270132/huiskamer/9_f3zvrl.jpg"
+            />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-lazy"
+              data-src="https://res.cloudinary.com/toonverbeek/image/upload/q_auto:good/v1603270133/huiskamer/IMG_4374_oanps0.jpg"
+            />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-lazy"
+              data-src="https://res.cloudinary.com/toonverbeek/image/upload/q_auto:good/v1603270132/huiskamer/IMG_2370_2_lewstw.jpg"
+            />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
 
-          <div class="swiper-slide"><img src="./images/2.JPG" /></div>
-          <div class="swiper-slide"><img src="./images/3.jpg" /></div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-lazy"
+              data-src="https://res.cloudinary.com/toonverbeek/image/upload/q_auto:good/v1603270131/huiskamer/2_eiipqh.jpg "
+            />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-lazy"
+              data-src="https://res.cloudinary.com/toonverbeek/image/upload/q_auto:good/v1603270131/huiskamer/3_ktf7cq.jpg"
+            />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -128,6 +194,12 @@
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+          },
+
+          preloadImages: false,
+          lazy: {
+            loadPrevNext: true,
+            loadOnTransitionStart: true,
           },
 
           // And if we need scrollbar

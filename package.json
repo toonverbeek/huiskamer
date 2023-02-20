@@ -8,9 +8,12 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
     "autoprefixer": "^9.5.1",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.3",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
